@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02),
+    0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05),
+    0px 7px 6px rgba(102, 102, 102, 0.06),
+    0px 11px 10px rgba(102, 102, 102, 0.08);
+  display: flex;
+  width: 95%;
+  margin: 1rem auto;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3333;
+  z-index: 999;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -50%;
+  right: -50%;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+header ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+header ul a i {
+  margin-right: 0.3rem;
+}
+
+main {
+  margin: auto;
+  width: 95%;
+}
+main h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+main h2 i {
+  margin-right: 0.5rem;
+}
+main .hero {
+  border-radius: 0.5rem;
+  margin-top: 6.5rem;
+  padding: 1rem;
+  background: #2666cf;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 560px;
+  box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02),
+    0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05),
+    0px 7px 6px rgba(102, 102, 102, 0.06),
+    0px 11px 10px rgba(102, 102, 102, 0.08);
+}
+main .hero img {
+  width: 23rem;
+}
+main .hero section {
+  max-width: 700px;
+}
+main .hero section h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+main .hero section p {
+  margin-bottom: 2rem;
+}
+main .hero section a {
+  text-decoration: none;
+  color: #2666cf;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+main .hero section a.resume {
+  background: white;
+  color: #2666cf;
+  margin-right: 0.5rem;
+  border: 1px solid white;
+}
+main .hero section a.scroll {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+main .hero section a i {
+  margin-right: 0.5rem;
+}
+main #project {
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  border: 2px solid #2666cf;
+  box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02),
+    0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05),
+    0px 7px 6px rgba(102, 102, 102, 0.06),
+    0px 11px 10px rgba(102, 102, 102, 0.08);
+}
+main #project section {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+}
+main #project .card {
+  width: 400px;
+  background: rgba(38, 103, 207, 0.2941176471);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02),
+    0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05),
+    0px 7px 6px rgba(102, 102, 102, 0.06),
+    0px 11px 10px rgba(102, 102, 102, 0.08);
+  animation: 0.3s ease-in-out;
+}
+main #project .card:hover {
+  transform: scale(1.05);
+}
+main #project .card:hover img {
+  filter: none;
+}
+main #project .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #2666cf;
+  height: 200px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  filter: grayscale(90%);
+}
+main #project .card .card-body {
+  padding: 1.5rem;
+}
+main #project .card .card-body h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+main #project .card .card-body .desc {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+main #project .card .card-body a {
+  text-decoration: none;
+  color: white;
+  background: #2666cf;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 400;
+}
+main #project .card .card-body a i {
+  margin-right: 0.5rem;
+}
+main #contact {
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  border: 2px solid #2666cf;
+  box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02),
+    0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05),
+    0px 7px 6px rgba(102, 102, 102, 0.06),
+    0px 11px 10px rgba(102, 102, 102, 0.08);
+}
+main #contact section {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+main #contact section .item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #2666cf;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02),
+    0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05),
+    0px 7px 6px rgba(102, 102, 102, 0.06),
+    0px 11px 10px rgba(102, 102, 102, 0.08);
+  padding-right: 1rem;
+  color: #2c3333;
+}
+main #contact section .item:hover {
+  transform: scale(1.04);
+}
+main #contact section .item i {
+  background: #2666cf;
+  padding: 1rem;
+  color: white;
+}
+
+footer {
+  margin: 1rem auto;
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  background-color: #616186;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02),
+    0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05),
+    0px 7px 6px rgba(102, 102, 102, 0.06),
+    0px 11px 10px rgba(102, 102, 102, 0.08);
+}
+footer i {
+  margin: 0 0.2rem;
+  color: red;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
