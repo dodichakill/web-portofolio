@@ -345,7 +345,7 @@ main #summary {
   box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02), 0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05), 0px 7px 6px rgba(102, 102, 102, 0.06), 0px 11px 10px rgba(102, 102, 102, 0.08);
 }
 main #summary section {
-  max-width: 50480%;
+  max-width: 50%;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
