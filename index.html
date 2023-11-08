@@ -52,6 +52,31 @@
         </li>
       </ul>
     </header>
+    <nav class="mobile">
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-address-card"></i> About</a>
+        </li>
+        <li>
+          <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+        </li>
+        <li>
+          <a href="#project"
+            ><i class="fa-brands fa-slideshare"></i> Projects</a
+          >
+        </li>
+        <li>
+          <a href="#contact"
+            ><i class="fa-solid fa-contact-book"></i> Contacts</a
+          >
+        </li>
+        <li>
+          <a href="#summary"
+            ><i class="fa-solid fa-contact-book"></i> Summary</a
+          >
+        </li>
+      </ul>
+    </nav>
     <main>
       <div class="hero" data-aos="fade-up" data-aos-delay="300">
         <section data-aos="fade-left" data-aos-delay="500">
@@ -257,20 +282,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-      // Mendeteksi apakah browser berada di tampilan mobile
-      function isMobile() {
-        return window.innerWidth <= 768; // Ubah angka ini sesuai dengan breakpoint yang Anda inginkan
-      }
-
-      // Menampilkan pesan alert jika berada di tampilan mobile
-      function showAlertIfMobile() {
-        if (isMobile()) {
-          alert("Proyek ini belum menerapkan responsive design.");
-        }
-      }
-
-      // Panggil fungsi saat halaman dimuat
-      window.addEventListener("load", showAlertIfMobile);
     </script>
   </body>
 </html>

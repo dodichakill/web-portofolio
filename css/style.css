@@ -16,6 +16,44 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+nav.mobile {
+  display: none;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  nav.mobile {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 99;
+    background-color: #2c3333;
+    box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02), 0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05), 0px 7px 6px rgba(102, 102, 102, 0.06), 0px 11px 10px rgba(102, 102, 102, 0.08);
+  }
+  nav.mobile ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  nav.mobile ul a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    color: white;
+    gap: 0.2rem;
+    align-items: center;
+  }
+}
+
 header {
   box-sizing: border-box;
   box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02), 0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05), 0px 7px 6px rgba(102, 102, 102, 0.06), 0px 11px 10px rgba(102, 102, 102, 0.08);
@@ -33,6 +71,12 @@ header {
   top: 0;
   left: -50%;
   right: -50%;
+}
+@media (max-width: 480px) {
+  header {
+    margin-top: 0;
+    display: none;
+  }
 }
 header ul {
   list-style: none;
@@ -72,15 +116,37 @@ main .hero {
   min-height: 560px;
   box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02), 0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05), 0px 7px 6px rgba(102, 102, 102, 0.06), 0px 11px 10px rgba(102, 102, 102, 0.08);
 }
+@media (max-width: 480px) {
+  main .hero {
+    margin-top: 2rem;
+    min-height: auto;
+    flex-direction: column-reverse;
+  }
+  main .hero h1,
+  main .hero p {
+    text-align: center;
+  }
+}
 main .hero img {
   width: 23rem;
 }
+@media (max-width: 480px) {
+  main .hero img {
+    width: 50%;
+    margin: auto;
+  }
+}
 main .hero section {
-  max-width: 700px;
+  max-width: 480px;
 }
 main .hero section h1 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
+}
+@media (max-width: 480px) {
+  main .hero section h1 {
+    font-size: 2rem;
+  }
 }
 main .hero section p {
   margin-bottom: 2rem;
@@ -92,6 +158,12 @@ main .hero section a {
   border-radius: 0.5rem;
   font-size: 1.2rem;
   font-weight: 600;
+}
+@media (max-width: 480px) {
+  main .hero section a {
+    display: block;
+    margin-bottom: 1rem;
+  }
 }
 main .hero section a.resume {
   background: white;
@@ -122,6 +194,11 @@ main #skills section {
   gap: 2rem;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 480px) {
+  main #skills section {
+    gap: 1rem;
+  }
 }
 main #skills section .item {
   border: 1px solid black;
@@ -164,12 +241,22 @@ main #project section {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 480px) {
+  main #project section {
+    flex-direction: column;
+  }
+}
 main #project .card {
   width: 400px;
   background: rgba(38, 103, 207, 0.2941176471);
   border-radius: 0.5rem;
   box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02), 0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05), 0px 7px 6px rgba(102, 102, 102, 0.06), 0px 11px 10px rgba(102, 102, 102, 0.08);
   animation: 0.3s ease-in-out;
+}
+@media (max-width: 480px) {
+  main #project .card {
+    width: 100%;
+  }
 }
 main #project .card:hover {
   transform: scale(1.05);
@@ -224,6 +311,11 @@ main #contact section {
   align-items: center;
   margin-bottom: 2rem;
 }
+@media (max-width: 480px) {
+  main #contact section {
+    gap: 1rem;
+  }
+}
 main #contact section .item {
   text-decoration: none;
   display: flex;
@@ -253,10 +345,15 @@ main #summary {
   box-shadow: 0px 0px 0px rgba(102, 102, 102, 0.02), 0px 2px 2px rgba(102, 102, 102, 0.03), 0px 4px 4px rgba(102, 102, 102, 0.05), 0px 7px 6px rgba(102, 102, 102, 0.06), 0px 11px 10px rgba(102, 102, 102, 0.08);
 }
 main #summary section {
-  max-width: 50%;
+  max-width: 50480%;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+@media (max-width: 480px) {
+  main #summary section {
+    max-width: 95480%;
+  }
 }
 main #summary section p {
   font-size: 1.1rem;
